@@ -1,3 +1,4 @@
+#Cath_The_Turtle_Game
 import turtle , time , random
 from random import randint
 
@@ -17,9 +18,15 @@ skor.write("Skorunuz :0", align="center", font=FONT)
 
 #skor degisimi
 score=0
+game_over = False
 def score_guncelle():
-     skor.clear()
-     skor.write(f"score: {score}", align="center", font=(FONT))
+    skor.clear()
+    if not game_over:
+        skor.write(f"Skorunuz: {score}", align="center", font=(FONT))
+    else:
+        skor.goto(x=0,y=0)
+        skor.write(f"Skorunuz: {score}", align="center", font=(FONT))
+
 
 #Random Turtle Oluşturma
 
@@ -49,6 +56,9 @@ def countdown(time):
         screen.ontimer(lambda: countdown(time - 1), 1000)
     else:
         turtle.write("Süreniz Doldu!", align='center', font=FONT)
+        random_turtle.hideturtle()
+        game_over = True
+        score_guncelle()
 
 turtle = Turtle()
 turtle.hideturtle()
@@ -59,6 +69,4 @@ screen = Screen()
 screen.onclick(lambda x, y: countdown(30))
 
 screen.mainloop()
-
-
 
