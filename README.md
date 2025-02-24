@@ -9,7 +9,6 @@ Bu proje kapsamında:
 
 ✅ Time kütüphanesi ile zamanlama işlemlerinin nasıl kontrol edileceği,
 
-✅ Tkinter kütüphanesi ile oyun için bir arayüz oluşturma mantığı öğrenilmiştir.
 
 
 Ayrıca, bir projede farklı kütüphanelerin nasıl bir araya getirildiğini ve etkili bir şekilde nasıl kullanılabileceğini kavrayarak Python’daki pratik bilginizi geliştirilmiştir. 🚀
