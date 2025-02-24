@@ -1,4 +1,5 @@
-🐢 Catch The Turtle Game 🎯
+# 🐢 Catch The Turtle Game 🎯
+
 Bu oyun, Python programlama dilini öğrenme sürecini hem eğlenceli hale getirmek hem de öğrenmeye katkı sağlamak amacıyla tasarlanmıştır. Projede Turtle, Time, Random ve Tkinter kütüphaneleri kullanılmıştır.
 
 Bu proje kapsamında:
